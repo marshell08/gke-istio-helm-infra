@@ -4,11 +4,12 @@ echo "Getting things ready....."
 export GCLOUD_PROJECT=$(gcloud config get-value project)
 export INSTANCE_REGION=us-central1
 export INSTANCE_ZONE=us-central1-a
-export PROJECT_NAME=istio
-export CLUSTER_NAME=${PROJECT_NAME}-cluster
-export CONTAINER_NAME=${PROJECT_NAME}-container
+export PROJECT_NAME=microservices-cicd-demo-2
+export CLUSTER_NAME=istio-cluster
+export CONTAINER_NAME=istio-container
 
 echo "setup"
+gcloud config set project ${PROJECT_NAME}
 gcloud config set compute/zone ${INSTANCE_ZONE}
 
 echo "enable services"
