@@ -17,7 +17,6 @@ kubectl create ns istio-system
 echo "install istio - this might take a moment..."
 helm install install/kubernetes/helm/istio \
     --name istio \
-    --tls \
     --namespace istio-system \
 	--set grafana.enabled=true \
 	--set grafana.persist=false \
