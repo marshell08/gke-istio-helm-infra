@@ -4,10 +4,9 @@ cd istio-${ISTIO_VERSION}/
 
 echo "launch bookinfo sample on gke"
 
-kubectl create ns bookinfo-dev
 kubectl label namespace bookinfo-dev istio-injection=enabled
 
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml  --namespace=bookinfo-dev
 sleep 10
 
 echo "add in the ingress"
