@@ -3,6 +3,7 @@ export ISTIO_VERSION=1.0.0
 cd istio-${ISTIO_VERSION}/
 
 echo "launch bookinfo sample on gke"
+kubectl create ns bookinfo-dev
 
 kubectl label namespace bookinfo-dev istio-injection=enabled
 
