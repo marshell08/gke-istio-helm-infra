@@ -15,6 +15,10 @@ gcloud config set compute/zone ${INSTANCE_ZONE}
 echo "enable services"
 gcloud services enable compute.googleapis.com
 gcloud services enable container.googleapis.com
+gcloud services enable containerregistry.googleapis.com
+gcloud services enable cloudbuild.googleapis.com
+gcloud services enable sourcerepo.googleapis.com
+gcloud services enable containeranalysis.googleapis.com
 
 echo "creating container engine cluster"
 gcloud container clusters create ${CLUSTER_NAME} \
