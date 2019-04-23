@@ -10,5 +10,5 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml  --namespace=booki
 sleep 10
 
 echo "add in the ingress"
-kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml --namespace=bookinfo-dev
 kubectl get gateway
