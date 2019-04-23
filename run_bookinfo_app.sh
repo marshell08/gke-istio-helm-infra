@@ -15,7 +15,7 @@ kubectl get gateway
 
 echo "checking for gateway completion"
 sleep 30
-sh check-bookinfo-gateway.sh
+sh ./check-bookinfo-gateway.sh
 
 echo "if this errors out you can always retry by calling:"
 echo "sh check-bookinfo-gateway.sh"
