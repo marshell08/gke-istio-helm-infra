@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-export PROJECT=microservices-lcbo-demo
+export PROJECT=microservices-lcbo-final-demo1
 export CLUSTER=gke-deploy-cluster
 export ZONE=us-central1-b
 
-gcloud config set project microservices-lcbo-demo
+gcloud config set project microservices-lcbo-final-demo1
 
 gcloud services enable container.googleapis.com 
 gcloud services enable containerregistry.googleapis.com 
