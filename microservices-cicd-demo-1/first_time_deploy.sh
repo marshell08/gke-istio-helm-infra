@@ -2,6 +2,7 @@
 
 gcloud container clusters get-credentials gke-deploy-cluster --project=microservices-lcbo-demo --zone=us-central1-b
 git clone git@github.com:marshell08/gcp-go-microservice-app1.git -b master
+cd gcp-go-microservice-app1
 
 kubectl create ns production
 
