@@ -7,5 +7,5 @@ kubectl label namespace default istio-injection=enabled
 kubectl apply -f ./istio-manifests
 
 #skaffold run --default-repo=gcr.io/[PROJECT_ID]
-skaffold run -p gcb --default-repo=gcr.io/microservices-cicd-demo-3
+skaffold run -p gcb --default-repo=gcr.io/microservices-lcbo-final-demo2
 
