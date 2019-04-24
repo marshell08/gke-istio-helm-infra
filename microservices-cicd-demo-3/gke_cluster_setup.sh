@@ -4,8 +4,8 @@ echo "Getting things ready....."
 export GCLOUD_PROJECT=$(gcloud config get-value project)
 export INSTANCE_REGION=us-central1
 export INSTANCE_ZONE=us-central1-a
-export PROJECT_NAME=microservices-cicd-demo-3
-export CLUSTER_NAME=istio-cluster-demo-3
+export PROJECT_NAME=microservices-lcbo-final-demo2
+export CLUSTER_NAME=istio-cluster-demo-2
 export CONTAINER_NAME=istio-container
 
 echo "setup"
