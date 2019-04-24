@@ -10,6 +10,7 @@ kubectl apply -f kubernetes/deployments/prod -n production
 kubectl apply -f kubernetes/deployments/canary -n production
 kubectl apply -f kubernetes/services -n production
 
+kubectl scale deployment gceme-frontend-production -n production --replicas 4
 
 kubectl get pods -n production -l app=gceme -l role=frontend
 kubectl get pods -n production -l app=gceme -l role=backend
